@@ -1,0 +1,237 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport content="width=device-width, initial-scale1.0">
+<title>Operating System Quiz</TITLE>
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+
+box-sizing:border-box;
+font-weight:300;
+}
+
+html{
+font=size:62.5%;
+}
+.main-div{
+width:relative;
+height:100%;
+
+background-color:#81ecec;
+}
+#heading
+{
+    width:RELATIVE;
+	height:RELATIVE;
+	background-color:#ffeaa7;
+	position:relative;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+#main{
+width:relative;
+height:90%;
+display:grid;
+place-items: center;
+background-color:#81ecec;
+}
+
+.inner-div{
+width:90%;
+height:100%;
+padding:0.5rem 4rem;
+border-radius:2rem;
+background-color:#f7f1e3;
+box-shadow:0 1rem  #d63031;
+
+}
+.inner-div h2{
+font-size: 4rem;
+color:red;
+font-weight:400;
+margin:1rem 0 2rem 0;
+}
+.inner-div li 
+{
+font-size: 3rem;
+margin-top:1rem;
+list-style:none;
+}
+input  {
+   cursor:pointer;
+   }
+ 
+#submit, .btn {
+padding:1rem 3rem;
+outline:none;
+font-size:2rem;
+display:block;
+margin:auto;
+border:none;
+text-transform:uppercase;
+color:white;
+background-color:#ff7675;
+margin-top:4rem;
+ cursor:pointer;
+}
+#submit:hover {
+background-color:red;
+}
+#showScore{
+background-color:#dfe9e9;
+margin-top:2rem;
+padding: 3rem 4rem;
+box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+#showScore h3{
+ font-size:2rem;
+ text-align:center;
+ 
+}
+
+#showScore .btn:hover {
+cursor:pointer;
+background-color:#00b894;
+color:#fff;
+}
+
+#showScore .btn{
+margin-top:2rem;
+background-color:#55efc4;
+color:#2d3436;
+}
+
+.scoreArea
+{
+display:none;
+}
+#designed1
+{
+	width:RELATIVE;
+	height:RELATIVE;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+
+#designed
+{
+	width:RELATIVE;
+	height:RELATIVE;
+	background-color:#dfe9e9;
+    margin-top:3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.glow1 {
+  font-size: 35px;
+  color:#2d3436;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6 , 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+</style>
+<script>
+	      window.oncontextmenu=function ()
+		  {
+		  console.log("Right click Disabled");
+		  return false;
+		  }
+	</script>
+						    <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                alert('not allowed');
+            }
+            return false;
+    };
+    </script>
+<body bgcolor="#81ecec">
+     <div class="main-div">
+	    
+		<h1 class="glow">Operating System Quiz Contest </br>By Aman Kumar</h1>
+		<center><h2><u>15 questions are provided please solve this.</u>
+</h2></center></br></br>
+		<div id="main">
+	      <div class="inner-div">
+		     <h2 class="question">Question Comes Here</h2>
+		<ul>
+			 <li>
+			      <input type="radio" name="answer" id="ans1" class="answer">
+			       <label for="ans1" id=option1> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans2" class="answer">
+			       <label for="ans2" id=option2> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans3" class="answer">
+			       <label for="ans3" id=option3> Answer Option</label>
+			 </li>
+			 
+			  <li>
+			      <input type="radio" name="answer" id="ans4" class="answer">
+			       <label for="ans4" id=option4> Answer Option</label>
+			 </li>
+		</ul>
+		<button id="submit">submit</button>
+		<div id="showScore" class="scoreArea"></div>
+	   </div>
+	             <CENTER></br><h2 class="">DESIGNED AND DEVELOPED BY:- AMAN KUMAR </br>(RN COLLEGE BCA-III ROLLno-70)</h2></CENTER>
+				 </div>
+       </div>
+	   
+	   
+	   <script src ="O.S.js"></script>
+	   
+	 
+	          
+</body>
+</html>		 
